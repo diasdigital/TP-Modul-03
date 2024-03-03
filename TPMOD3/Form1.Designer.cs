@@ -28,12 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            Keluaran = new Label();
+            Tombol = new Button();
+            boxNama = new TextBox();
+            SuspendLayout();
+            // 
+            // Keluaran
+            // 
+            Keluaran.AutoSize = true;
+            Keluaran.Location = new Point(157, 177);
+            Keluaran.Name = "Keluaran";
+            Keluaran.Size = new Size(45, 20);
+            Keluaran.TabIndex = 0;
+            Keluaran.Text = "Halo ";
+            // 
+            // Tombol
+            // 
+            Tombol.Location = new Point(334, 101);
+            Tombol.Name = "Tombol";
+            Tombol.Size = new Size(94, 29);
+            Tombol.TabIndex = 1;
+            Tombol.Text = "Submit";
+            Tombol.UseVisualStyleBackColor = true;
+            Tombol.Click += Tombol_Click;
+            // 
+            // boxNama
+            // 
+            boxNama.Location = new Point(84, 103);
+            boxNama.Name = "boxNama";
+            boxNama.Size = new Size(216, 27);
+            boxNama.TabIndex = 2;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(521, 327);
+            Controls.Add(boxNama);
+            Controls.Add(Tombol);
+            Controls.Add(Keluaran);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label Keluaran;
+        private Button Tombol;
+        private TextBox boxNama;
     }
 }

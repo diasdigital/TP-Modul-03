@@ -6,5 +6,11 @@ namespace TPMOD3
         {
             InitializeComponent();
         }
+
+        private void Tombol_Click(object sender, EventArgs e)
+        {
+            String nama = boxNama.Text;
+            Keluaran.Text = "Halo " + nama;
+        }
     }
 }
